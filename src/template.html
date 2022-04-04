@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html id="_root" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body id="_body" class=" p-2 overflow-y-scroll w-full">
+    <main class="center-all">
+        <section class="container responsive w-full h-auto center-all">
+            <div id="_search_box" class="p-0 m-0">
+                <header><h1>Flickr API</h1></header>
+                <input  id="_input_text" type="text" autofocus="true" placeholder="search..">
+                <button id="_button" clicked="generatePhotos()" class="button">Get new photos</button>
+                <p id="_status_content"></p>
+            </div>
+        </section>
+        <hr>
+        <br>
+        <section id="_gallery" class=" flex flex-row place-content-around justify-center flex-wrap">
+            <div id="_dummycontent" class="responsive w-1/2 h-auto place-content-center  text-center rounded-md">
+                <img id="_img" alt="default_image">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
